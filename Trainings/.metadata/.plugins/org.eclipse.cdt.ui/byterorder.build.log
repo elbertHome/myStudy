@@ -1,0 +1,6 @@
+20:26:56 **** Build of configuration Default for project byterorder ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o byteorder ./src/byteorder.cpp  
+
+20:26:58 Build Finished (took 1s.898ms)
+

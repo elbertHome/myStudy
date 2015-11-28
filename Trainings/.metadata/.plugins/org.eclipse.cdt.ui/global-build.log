@@ -1,0 +1,154 @@
+19:59:18 **** Clean-only build of configuration Debug for project daytimetcpcli ****
+make clean 
+rm -rf  ./src/daytimetcpcli.o  ./libs/error.o  ./src/daytimetcpcli.d  ./libs/error.d  daytimetcpcli
+ 
+19:59:25 **** Build of configuration Debug for project daytimetcpcli ****
+make all 
+Building file: ../src/daytimetcpcli.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/daytimetcpcli.d" -MT"src/daytimetcpcli.d" -o "src/daytimetcpcli.o" "../src/daytimetcpcli.cpp"
+../src/daytimetcpcli.cpp: In function ‘int main(int, char**)’:
+../src/daytimetcpcli.cpp:10:6: warning: unused variable ‘sockefd’ [-Wunused-variable]
+  int sockefd;
+      ^
+../src/daytimetcpcli.cpp:11:6: warning: unused variable ‘n’ [-Wunused-variable]
+  int n;
+      ^
+../src/daytimetcpcli.cpp:12:7: warning: unused variable ‘recvline’ [-Wunused-variable]
+  char recvline[MAXLINE + 1];
+       ^
+../src/daytimetcpcli.cpp:13:14: warning: unused variable ‘servaddr’ [-Wunused-variable]
+  sockaddr_in servaddr;
+              ^
+Finished building: ../src/daytimetcpcli.cpp
+ 
+Building file: ../libs/error.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"libs/error.d" -MT"libs/error.d" -o "libs/error.o" "../libs/error.c"
+../libs/error.c: In function ‘err_doit’:
+../libs/error.c:102:3: warning: format not a string literal and no format arguments [-Wformat-security]
+   syslog(level, buf);
+   ^
+Finished building: ../libs/error.c
+ 
+Building target: daytimetcpcli
+Invoking: GCC C++ Linker
+g++  -o "daytimetcpcli"  ./src/daytimetcpcli.o  ./libs/error.o   
+./src/daytimetcpcli.o: In function `main':
+/home/elbert/Study/Trainings/daytimetcpcli/Debug/../src/daytimetcpcli.cpp:17: undefined reference to `err_quit(char const*, ...)'
+collect2: error: ld returned 1 exit status
+make: *** [daytimetcpcli] Error 1
+20:01:06 **** Incremental Build of configuration Debug for project daytimetcpcli ****
+make all 
+Building file: ../src/daytimetcpcli.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/daytimetcpcli.d" -MT"src/daytimetcpcli.d" -o "src/daytimetcpcli.o" "../src/daytimetcpcli.cpp"
+../src/daytimetcpcli.cpp: In function ‘int main(int, char**)’:
+../src/daytimetcpcli.cpp:10:6: warning: unused variable ‘sockefd’ [-Wunused-variable]
+  int sockefd;
+      ^
+../src/daytimetcpcli.cpp:11:6: warning: unused variable ‘n’ [-Wunused-variable]
+  int n;
+      ^
+../src/daytimetcpcli.cpp:12:7: warning: unused variable ‘recvline’ [-Wunused-variable]
+  char recvline[MAXLINE + 1];
+       ^
+../src/daytimetcpcli.cpp:13:14: warning: unused variable ‘servaddr’ [-Wunused-variable]
+  sockaddr_in servaddr;
+              ^
+Finished building: ../src/daytimetcpcli.cpp
+ 
+Building file: ../libs/error.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"libs/error.d" -MT"libs/error.d" -o "libs/error.o" "../libs/error.c"
+../libs/error.c: In function ‘err_doit’:
+../libs/error.c:102:3: warning: format not a string literal and no format arguments [-Wformat-security]
+   syslog(level, buf);
+   ^
+Finished building: ../libs/error.c
+ 
+Building target: daytimetcpcli
+Invoking: GCC C++ Linker
+g++  -o "daytimetcpcli"  ./src/daytimetcpcli.o  ./libs/error.o   
+./src/daytimetcpcli.o: In function `main':
+/home/elbert/Study/Trainings/daytimetcpcli/Debug/../src/daytimetcpcli.cpp:17: undefined reference to `err_quit(char const*, ...)'
+collect2: error: ld returned 1 exit status
+make: *** [daytimetcpcli] Error 1
+20:05:05 **** Build of configuration Default for project daytimetcpcli ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+21:17:32 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./src/daytimetcpcli.cpp 
+./src/daytimetcpcli.cpp: In function ‘int main(int, char**)’:
+./src/daytimetcpcli.cpp:10:6: warning: unused variable ‘sockefd’ [-Wunused-variable]
+  int sockefd;
+      ^
+./src/daytimetcpcli.cpp:11:6: warning: unused variable ‘n’ [-Wunused-variable]
+  int n;
+      ^
+./src/daytimetcpcli.cpp:12:7: warning: unused variable ‘recvline’ [-Wunused-variable]
+  char recvline[MAXLINE + 1];
+       ^
+./src/daytimetcpcli.cpp:13:14: warning: unused variable ‘servaddr’ [-Wunused-variable]
+  sockaddr_in servaddr;
+              ^
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/error.c  
+./libs/error.c: In function ‘void err_doit(int, int, const char*, va_list)’:
+./libs/error.c:102:20: warning: format not a string literal and no format arguments [-Wformat-security]
+   syslog(level, buf);
+                    ^
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o daytimetcpcli daytimetcpcli.o error.o 
+21:18:01 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+21:18:08 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+22:20:49 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+g++  -I./includes -O0 -g3 -Wall  -o daytimetcpcli ./src/daytimetcpcli.cpp error.o wrapsock.o wrapunix.o wrapstdio.o 
+/tmp/ccFJV9d3.o: In function `main':
+/home/elbert/Study/Trainings/daytimetcpcli//./src/daytimetcpcli.cpp:26: undefined reference to `Inet_pton(int, char const*, void*)'
+collect2: error: ld returned 1 exit status
+make: *** [daytimetcpcli] Error 1
+22:23:25 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+g++  -I./includes -O0 -g3 -Wall  -c ./libs/wraplib.c  
+g++  -I./includes -O0 -g3 -Wall  -o daytimetcpcli ./src/daytimetcpcli.cpp error.o wrapsock.o wrapunix.o wrapstdio.o wraplib.o 
+22:29:18 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+g++  -I./includes -O0 -g3 -Wall  -c ./libs/error.c  
+./libs/error.c: In function ‘void err_doit(int, int, const char*, va_list)’:
+./libs/error.c:103:28: warning: format not a string literal and no format arguments [-Wformat-security]
+   syslog(level, constLitStr);
+                            ^
+g++  -I./includes -O0 -g3 -Wall  -o daytimetcpcli ./src/daytimetcpcli.cpp error.o wrapsock.o wrapunix.o wrapstdio.o wraplib.o 
+22:30:32 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+g++  -I./includes -O0 -g3 -Wall  -c ./libs/error.c  
+g++  -I./includes -O0 -g3 -Wall  -o daytimetcpcli ./src/daytimetcpcli.cpp error.o wrapsock.o wrapunix.o wrapstdio.o wraplib.o 
+20:26:25 **** Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+20:26:25 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+20:26:50 **** Clean-only build of configuration Default for project byterorder ****
+make clean 
+rm byteorder  -rf
+20:26:50 **** Clean-only build of configuration Default for project daytimetcpcli ****
+make clean 
+rm daytimetcpsrv daytimetcpcli error.o wrapsock.o wrapunix.o wrapstdio.o wraplib.o -rf
+20:26:56 **** Build of configuration Default for project byterorder ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o byteorder ./src/byteorder.cpp  
+20:26:58 **** Build of configuration Default for project daytimetcpcli ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/error.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapsock.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapunix.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapstdio.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wraplib.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o daytimetcpsrv ./src/daytimetcpsrv.cpp error.o wrapsock.o wrapunix.o wrapstdio.o wraplib.o 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o daytimetcpcli ./src/daytimetcpcli.cpp error.o wrapsock.o wrapunix.o wrapstdio.o wraplib.o 

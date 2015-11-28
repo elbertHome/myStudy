@@ -1,0 +1,12 @@
+20:26:58 **** Build of configuration Default for project daytimetcpcli ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/error.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapsock.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapunix.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapstdio.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wraplib.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o daytimetcpsrv ./src/daytimetcpsrv.cpp error.o wrapsock.o wrapunix.o wrapstdio.o wraplib.o 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o daytimetcpcli ./src/daytimetcpcli.cpp error.o wrapsock.o wrapunix.o wrapstdio.o wraplib.o 
+
+20:26:59 Build Finished (took 1s.471ms)
+
