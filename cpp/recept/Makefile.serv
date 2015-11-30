@@ -1,0 +1,40 @@
+#CC=clang++
+CC=g++
+CFLAGS= -g -O0 -Wall -I/home/atadm/work/libevent2/include -I/usr/include/mysql -I/home/atadm/work/mysql++/include
+LDFLAGS=-L/home/atadm/work/libevent2/lib -L/home/atadm/work/mysql++/lib -levent_core -lmysqlpp -lexpat
+OBJS=zn_server.o zn_connection.o zn_migration_queue.o zn_xml.o zn_config_manager.o zn_misc.o zn_logger.o
+DEPS=zn_result_code.hpp zn_exception.hpp zn_retriable.hpp
+
+PROGRAM = msgmvrcpt
+all: $(PROGRAM)
+
+$(PROGRAM): zn_toolserv.cpp $(DEPS) $(OBJS)
+	$(CC) $(CFLAGS) zn_toolserv.cpp $(OBJS) -o $@ $(LDFLAGS)
+
+zn_server.o: zn_server.cpp zn_server.hpp $(DEPS)
+	$(CC) $(CFLAGS) zn_server.cpp -c
+
+zn_connection.o: zn_connection.cpp zn_connection.hpp $(DEPS)
+	$(CC) $(CFLAGS) zn_connection.cpp -c
+
+zn_migration_queue.o: zn_migration_queue.cpp zn_migration_queue.hpp $(DEPS)
+	$(CC) $(CFLAGS) zn_migration_queue.cpp -c
+
+zn_xml.o: zn_xml.cpp zn_xml.hpp $(DEPS)
+	$(CC) $(CFLAGS) zn_xml.cpp -c
+
+zn_folder_info.o: zn_folder_info.cpp zn_folder_info.hpp zn_filterable_list.hpp $(DEPS)
+	$(CC) $(CFLAGS) zn_folder_info.cpp -c
+
+zn_config_manager.o: zn_config_manager.cpp zn_config_manager.hpp $(DEPS)
+	$(CC) $(CFLAGS) zn_config_manager.cpp -c
+
+zn_misc.o: zn_misc.cpp zn_misc.hpp $(DEPS)
+	$(CC) $(CFLAGS) zn_misc.cpp -c
+
+zn_logger.o: zn_logger.cpp zn_logger.hpp $(DEPS)
+	$(CC) $(CFLAGS) zn_logger.cpp -c
+
+clean:
+	rm -f *.o
+	rm -f $(PROGRAM)

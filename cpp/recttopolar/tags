@@ -1,0 +1,22 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+COORDIN_H	coordin.hpp	2;"	d
+angle	coordin.hpp	/^	double angle;		\/\/direction from the orgin$/;"	m	struct:polar	access:public
+distance	coordin.hpp	/^	double distance;	\/\/distance from the orgin$/;"	m	struct:polar	access:public
+main	main.cpp	/^int main(char* argv,int argc)$/;"	f	signature:(char* argv,int argc)
+polar	coordin.hpp	/^struct polar$/;"	s
+polar::angle	coordin.hpp	/^	double angle;		\/\/direction from the orgin$/;"	m	struct:polar	access:public
+polar::distance	coordin.hpp	/^	double distance;	\/\/distance from the orgin$/;"	m	struct:polar	access:public
+rect	coordin.hpp	/^struct rect$/;"	s
+rect::x	coordin.hpp	/^	double x;			\/\/ position x$/;"	m	struct:rect	access:public
+rect::y	coordin.hpp	/^	double y;			\/\/ position y$/;"	m	struct:rect	access:public
+rect_to_polar	coordin.cpp	/^polar rect_to_polar(rect xypos)$/;"	f	signature:(rect xypos)
+rect_to_polar	coordin.hpp	/^polar rect_to_polar(rect pos);$/;"	p	signature:(rect pos)
+show_polar	coordin.cpp	/^void show_polar(polar dapos)$/;"	f	signature:(polar dapos)
+show_polar	coordin.hpp	/^void show_polar(polar pos);$/;"	p	signature:(polar pos)
+x	coordin.hpp	/^	double x;			\/\/ position x$/;"	m	struct:rect	access:public
+y	coordin.hpp	/^	double y;			\/\/ position y$/;"	m	struct:rect	access:public
