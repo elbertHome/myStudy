@@ -1,0 +1,8 @@
+11:43:49 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./src/sigchldwait.cpp  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o tcpserv01 ./src/tcpserv01.cpp sigchldwait.o error.o wrapsock.o wrapunix.o wrapstdio.o str_echo.o str_cli.o readline.o writen.o signal.o wraplib.o 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o tcpcli01 ./src/tcpcli01.cpp sigchldwait.o error.o wrapsock.o wrapunix.o wrapstdio.o str_echo.o str_cli.o readline.o writen.o signal.o wraplib.o 
+
+11:43:51 Build Finished (took 2s.219ms)
+

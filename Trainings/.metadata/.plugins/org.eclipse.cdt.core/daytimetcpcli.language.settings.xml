@@ -5,27 +5,27 @@
 			<provider id="org.eclipse.cdt.managedbuilder.core.GCCBuildCommandParser">
 				<language id="org.eclipse.cdt.core.g++">
 					<resource project-relative-path="src/daytimetcpsrv.cpp">
-						<entry kind="includePath" name="/home/elbert/Study/Trainings/includes"/>
+						<entry kind="includePath" name="/home/elbert/study/Trainings/includes"/>
 					</resource>
 					<resource project-relative-path="src/daytimetcpcli.cpp">
-						<entry kind="includePath" name="/home/elbert/Study/Trainings/includes"/>
+						<entry kind="includePath" name="/home/elbert/study/Trainings/includes"/>
 					</resource>
 				</language>
 				<language id="org.eclipse.cdt.core.gcc">
 					<resource project-relative-path="libs/wrapunix.c">
-						<entry kind="includePath" name="/home/elbert/Study/Trainings/includes"/>
+						<entry kind="includePath" name="/home/elbert/study/Trainings/includes"/>
 					</resource>
 					<resource project-relative-path="libs/wraplib.c">
-						<entry kind="includePath" name="/home/elbert/Study/Trainings/includes"/>
+						<entry kind="includePath" name="/home/elbert/study/Trainings/includes"/>
 					</resource>
 					<resource project-relative-path="libs/error.c">
-						<entry kind="includePath" name="/home/elbert/Study/Trainings/includes"/>
+						<entry kind="includePath" name="/home/elbert/study/Trainings/includes"/>
 					</resource>
 					<resource project-relative-path="libs/wrapsock.c">
-						<entry kind="includePath" name="/home/elbert/Study/Trainings/includes"/>
+						<entry kind="includePath" name="/home/elbert/study/Trainings/includes"/>
 					</resource>
 					<resource project-relative-path="libs/wrapstdio.c">
-						<entry kind="includePath" name="/home/elbert/Study/Trainings/includes"/>
+						<entry kind="includePath" name="/home/elbert/study/Trainings/includes"/>
 					</resource>
 				</language>
 			</provider>
