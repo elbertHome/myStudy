@@ -152,3 +152,447 @@ g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapstdio.c
 g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wraplib.c  
 g++  -I./includes -O0 -g3 -Wall -std=c++0x -o daytimetcpsrv ./src/daytimetcpsrv.cpp error.o wrapsock.o wrapunix.o wrapstdio.o wraplib.o 
 g++  -I./includes -O0 -g3 -Wall -std=c++0x -o daytimetcpcli ./src/daytimetcpcli.cpp error.o wrapsock.o wrapunix.o wrapstdio.o wraplib.o 
+13:46:27 **** Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+13:46:27 **** Build of configuration Default for project daytimetcpcli ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/error.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapsock.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wraplib.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o daytimetcpsrv ./src/daytimetcpsrv.cpp error.o wrapsock.o wrapunix.o wrapstdio.o wraplib.o 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o daytimetcpcli ./src/daytimetcpcli.cpp error.o wrapsock.o wrapunix.o wrapstdio.o wraplib.o 
+13:46:31 **** Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/error.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapsock.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapunix.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapstdio.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wraplib.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o tcpserv01 tcpserv01.cpp error.o wrapsock.o wrapunix.o wrapstdio.o wraplib.o 
+g++: error: tcpserv01.cpp: No such file or directory
+make: *** [tcpserv01] Error 1
+13:47:13 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+13:47:13 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+13:47:13 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o tcpserv01 ./src/tcpserv01.cpp error.o wrapsock.o wrapunix.o wrapstdio.o wraplib.o 
+13:53:10 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+13:53:10 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+13:53:10 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/error.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapsock.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapunix.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapstdio.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wraplib.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o tcpserv01 ./src/tcpserv01.cpp error.o wrapsock.o wrapunix.o wrapstdio.o wraplib.o 
+13:55:02 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+13:55:02 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+13:55:03 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/error.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapsock.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapunix.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapstdio.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wraplib.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o bin/tcpserv01 ./src/tcpserv01.cpp ./bin/error.o ./bin/wrapsock.o ./bin/wrapunix.o ./bin/wrapstdio.o ./bin/wraplib.o 
+g++: error: ./bin/error.o: No such file or directory
+g++: error: ./bin/wrapsock.o: No such file or directory
+g++: error: ./bin/wrapunix.o: No such file or directory
+g++: error: ./bin/wrapstdio.o: No such file or directory
+g++: error: ./bin/wraplib.o: No such file or directory
+make: *** [bin/tcpserv01] Error 1
+14:57:23 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+14:57:24 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+14:57:25 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o tcpserv01 ./src/tcpserv01.cpp error.o wrapsock.o wrapunix.o wrapstdio.o wraplib.o 
+16:55:16 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+16:55:17 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+16:55:17 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o tcpserv01 ./src/tcpserv01.cpp error.o wrapsock.o wrapunix.o wrapstdio.o wraplib.o 
+./src/tcpserv01.cpp: In function ‘int main(int, char**)’:
+./src/tcpserv01.cpp:21:20: error: no match for ‘operator=’ (operand types are ‘in_addr’ and ‘uint32_t {aka unsigned int}’)
+  servaddr.sin_addr = htonl(INADDR_ANY);
+                    ^
+./src/tcpserv01.cpp:21:20: note: candidates are:
+In file included from ./includes/unp.h:25:0,
+                 from ./src/tcpserv01.cpp:7:
+/usr/include/netinet/in.h:31:8: note: in_addr& in_addr::operator=(const in_addr&)
+ struct in_addr
+        ^
+/usr/include/netinet/in.h:31:8: note:   no known conversion for argument 1 from ‘uint32_t {aka unsigned int}’ to ‘const in_addr&’
+/usr/include/netinet/in.h:31:8: note: in_addr& in_addr::operator=(in_addr&&)
+/usr/include/netinet/in.h:31:8: note:   no known conversion for argument 1 from ‘uint32_t {aka unsigned int}’ to ‘in_addr&&’
+make: *** [tcpserv01] Error 1
+16:56:23 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+16:56:23 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+16:56:23 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o tcpserv01 ./src/tcpserv01.cpp error.o wrapsock.o wrapunix.o wrapstdio.o wraplib.o 
+/tmp/cciVGswG.o: In function `str_echo(int)':
+/home/elbert/study/Trainings/tcpcliserv//./src/tcpserv01.cpp:53: undefined reference to `Writen(int, void*, unsigned int)'
+collect2: error: ld returned 1 exit status
+make: *** [tcpserv01] Error 1
+10:52:47 **** Clean-only build of configuration Default for project byterorder ****
+make clean 
+rm byteorder  -rf
+10:52:47 **** Clean-only build of configuration Default for project daytimetcpcli ****
+make clean 
+rm daytimetcpsrv daytimetcpcli error.o wrapsock.o wrapunix.o wrapstdio.o wraplib.o -rf
+10:52:47 **** Clean-only build of configuration Default for project tcpcliserv ****
+make clean 
+rm tcpserv01 error.o wrapsock.o wrapunix.o wrapstdio.o wraplib.o -rf
+10:52:50 **** Build of configuration Default for project byterorder ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o byteorder ./src/byteorder.cpp  
+10:52:51 **** Build of configuration Default for project daytimetcpcli ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/error.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapsock.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapunix.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapstdio.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wraplib.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o daytimetcpsrv ./src/daytimetcpsrv.cpp error.o wrapsock.o wrapunix.o wrapstdio.o wraplib.o 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o daytimetcpcli ./src/daytimetcpcli.cpp error.o wrapsock.o wrapunix.o wrapstdio.o wraplib.o 
+10:52:53 **** Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/error.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapsock.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapunix.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapstdio.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wraplib.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o tcpserv01 ./src/tcpserv01.cpp error.o wrapsock.o wrapunix.o wrapstdio.o wraplib.o 
+/tmp/ccb6PDdM.o: In function `str_echo(int)':
+/home/elbert/study/Trainings/tcpcliserv//./src/tcpserv01.cpp:53: undefined reference to `Writen(int, void*, unsigned int)'
+collect2: error: ld returned 1 exit status
+make: *** [tcpserv01] Error 1
+11:08:09 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+11:08:09 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+11:08:09 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/writen.c  
+./libs/writen.c: In function ‘ssize_t writen(int, const void*, size_t)’:
+./libs/writen.c:11:6: error: invalid conversion from ‘const void*’ to ‘const char*’ [-fpermissive]
+  ptr = vptr;
+      ^
+./libs/writen.c: In function ‘void Writen(int, void*, size_t)’:
+./libs/writen.c:31:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (writen(fd, ptr, nbytes) != nbytes)
+                                 ^
+make: *** [writen.o] Error 1
+11:09:01 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+11:09:02 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+11:09:02 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/writen.c  
+./libs/writen.c: In function ‘void Writen(int, void*, size_t)’:
+./libs/writen.c:31:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (writen(fd, ptr, nbytes) != nbytes)
+                                 ^
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/str_echo.c   
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o tcpserv01 ./src/tcpserv01.cpp error.o wrapsock.o wrapunix.o wrapstdio.o writen.o str_echo.o wraplib.o 
+11:11:01 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+11:11:01 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+11:11:01 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/writen.c  
+./libs/writen.c: In function ‘void Writen(int, void*, size_t)’:
+./libs/writen.c:32:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (writen(fd, ptr, nbytes) != nbytes)
+                                 ^
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o tcpserv01 ./src/tcpserv01.cpp error.o wrapsock.o wrapunix.o wrapstdio.o writen.o str_echo.o wraplib.o 
+11:11:26 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+11:11:27 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+11:11:27 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/writen.c  
+./libs/writen.c: In function ‘void Writen(int, void*, size_t)’:
+./libs/writen.c:32:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (writen(fd, ptr, nbytes) != nbytes)
+                                 ^
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o tcpserv01 ./src/tcpserv01.cpp error.o wrapsock.o wrapunix.o wrapstdio.o writen.o str_echo.o wraplib.o 
+11:12:02 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+11:12:02 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+11:12:02 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+make: Nothing to be done for `all'.
+16:48:33 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+16:48:34 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+16:48:34 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/str_cli.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/readline.c  
+./libs/readline.c: In function ‘ssize_t readline(int, void*, size_t)’:
+./libs/readline.c:34:6: error: invalid conversion from ‘void*’ to ‘char*’ [-fpermissive]
+  ptr = vptr;
+      ^
+./libs/readline.c:35:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (n = 1; n < maxlen; n++) {
+                  ^
+make: *** [readline.o] Error 1
+16:50:11 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+16:50:11 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+16:50:11 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/readline.c  
+./libs/readline.c: In function ‘size_t readline(int, void*, size_t)’:
+./libs/readline.c:29:50: error: new declaration ‘size_t readline(int, void*, size_t)’
+ size_t readline(int fd, void *vptr, size_t maxlen)
+                                                  ^
+In file included from ./libs/readline.c:2:0:
+./includes/unp.h:291:10: error: ambiguates old declaration ‘ssize_t readline(int, void*, size_t)’
+ ssize_t  readline(int, void *, size_t);
+          ^
+./libs/readline.c: In function ‘size_t Readline(int, void*, size_t)’:
+./libs/readline.c:64:49: error: new declaration ‘size_t Readline(int, void*, size_t)’
+ size_t Readline(int fd, void *ptr, size_t maxlen)
+                                                 ^
+In file included from ./libs/readline.c:2:0:
+./includes/unp.h:495:10: error: ambiguates old declaration ‘ssize_t Readline(int, void*, size_t)’
+ ssize_t  Readline(int, void *, size_t);
+          ^
+make: *** [readline.o] Error 1
+16:50:46 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+16:50:47 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+16:50:47 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/readline.c  
+./libs/readline.c: In function ‘ssize_t readline(int, void*, size_t)’:
+./libs/readline.c:35:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (n = 1; n < maxlen; n++) {
+                  ^
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/writen.c  
+./libs/writen.c: In function ‘size_t writen(int, const void*, size_t)’:
+./libs/writen.c:5:49: error: new declaration ‘size_t writen(int, const void*, size_t)’
+ size_t writen(int fd, const void *vptr, size_t n)
+                                                 ^
+In file included from ./libs/writen.c:2:0:
+./includes/unp.h:316:10: error: ambiguates old declaration ‘ssize_t writen(int, const void*, size_t)’
+ ssize_t  writen(int, const void *, size_t);
+          ^
+./libs/writen.c: In function ‘void Writen(int, void*, size_t)’:
+./libs/writen.c:32:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (writen(fd, ptr, nbytes) != nbytes)
+                                 ^
+make: *** [writen.o] Error 1
+16:51:26 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+16:51:27 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+16:51:27 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/readline.c  
+./libs/readline.c: In function ‘ssize_t readline(int, void*, size_t)’:
+./libs/readline.c:34:6: error: invalid conversion from ‘void*’ to ‘char*’ [-fpermissive]
+  ptr = vptr;
+      ^
+./libs/readline.c:35:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (n = 1; n < maxlen; n++) {
+                  ^
+make: *** [readline.o] Error 1
+16:52:21 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+16:52:21 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+16:52:21 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/readline.c  
+./libs/readline.c: In function ‘ssize_t readline(int, void*, size_t)’:
+./libs/readline.c:35:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (n = 1; n < maxlen; n++)
+                  ^
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/writen.c  
+./libs/writen.c: In function ‘size_t writen(int, const void*, size_t)’:
+./libs/writen.c:5:49: error: new declaration ‘size_t writen(int, const void*, size_t)’
+ size_t writen(int fd, const void *vptr, size_t n)
+                                                 ^
+In file included from ./libs/writen.c:2:0:
+./includes/unp.h:316:10: error: ambiguates old declaration ‘ssize_t writen(int, const void*, size_t)’
+ ssize_t  writen(int, const void *, size_t);
+          ^
+./libs/writen.c: In function ‘void Writen(int, void*, size_t)’:
+./libs/writen.c:32:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (writen(fd, ptr, nbytes) != nbytes)
+                                 ^
+make: *** [writen.o] Error 1
+16:53:30 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+16:53:31 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+16:53:31 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/writen.c  
+./libs/writen.c: In function ‘void Writen(int, void*, size_t)’:
+./libs/writen.c:32:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (writen(fd, ptr, nbytes) != nbytes)
+                                 ^
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wraplib.c 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o tcpserv01 ./src/tcpserv01.cpp error.o wrapsock.o wrapunix.o wrapstdio.o str_echo.o str_cli.o readline.o writen.o wraplib.o 
+16:54:01 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+16:54:01 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+16:54:01 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+make: Nothing to be done for `all'.
+16:55:08 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+16:55:08 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+16:55:09 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+make: Nothing to be done for `all'.
+16:55:34 **** Clean-only build of configuration Default for project tcpcliserv ****
+make clean 
+rm tcpserv01 tcpcli01 error.o wrapsock.o wrapunix.o wrapstdio.o str_echo.o str_cli.o readline.o writen.o wraplib.o -rf
+16:55:37 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+16:55:37 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+16:55:37 **** Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/error.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapsock.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapunix.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wrapstdio.c 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/str_echo.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/str_cli.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/readline.c  
+./libs/readline.c: In function ‘ssize_t readline(int, void*, size_t)’:
+./libs/readline.c:35:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (n = 1; n < maxlen; n++)
+                  ^
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/writen.c  
+./libs/writen.c: In function ‘void Writen(int, void*, size_t)’:
+./libs/writen.c:32:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (writen(fd, ptr, nbytes) != nbytes)
+                                 ^
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/wraplib.c 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o tcpserv01 ./src/tcpserv01.cpp error.o wrapsock.o wrapunix.o wrapstdio.o str_echo.o str_cli.o readline.o writen.o wraplib.o 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o tcpcli01 ./src/tcpcli01.cpp error.o wrapsock.o wrapunix.o wrapstdio.o str_echo.o str_cli.o readline.o writen.o wraplib.o 
+11:24:31 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+11:24:32 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+11:24:32 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./src/sigchldwait.cpp  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./libs/signal.c  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o tcpserv01 ./src/tcpserv01.cpp sigchldwait.o error.o wrapsock.o wrapunix.o wrapstdio.o str_echo.o str_cli.o readline.o writen.o signal.o wraplib.o 
+./src/tcpserv01.cpp: In function ‘int main(int, char**)’:
+./src/tcpserv01.cpp:27:18: error: ‘sig_chld’ was not declared in this scope
+  Signal(SIGCHLD, sig_chld);
+                  ^
+make: *** [tcpserv01] Error 1
+11:27:06 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+11:27:06 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+11:27:06 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o tcpserv01 ./src/tcpserv01.cpp sigchldwait.o error.o wrapsock.o wrapunix.o wrapstdio.o str_echo.o str_cli.o readline.o writen.o signal.o wraplib.o 
+./src/tcpserv01.cpp: In function ‘int main(int, char**)’:
+./src/tcpserv01.cpp:30:18: error: ‘sig_chld’ was not declared in this scope
+  Signal(SIGCHLD, sig_chld);
+                  ^
+make: *** [tcpserv01] Error 1
+11:27:29 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+11:27:29 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+11:27:29 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o tcpserv01 ./src/tcpserv01.cpp sigchldwait.o error.o wrapsock.o wrapunix.o wrapstdio.o str_echo.o str_cli.o readline.o writen.o signal.o wraplib.o 
+./src/tcpserv01.cpp: In function ‘int main(int, char**)’:
+./src/tcpserv01.cpp:30:18: error: ‘sig_chld’ was not declared in this scope
+  Signal(SIGCHLD, sig_chld);
+                  ^
+make: *** [tcpserv01] Error 1
+11:43:49 **** Incremental Build of configuration Default for project byterorder ****
+make all 
+make: Nothing to be done for `all'.
+11:43:49 **** Incremental Build of configuration Default for project daytimetcpcli ****
+make all 
+make: Nothing to be done for `all'.
+11:43:49 **** Incremental Build of configuration Default for project tcpcliserv ****
+make all 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -c ./src/sigchldwait.cpp  
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o tcpserv01 ./src/tcpserv01.cpp sigchldwait.o error.o wrapsock.o wrapunix.o wrapstdio.o str_echo.o str_cli.o readline.o writen.o signal.o wraplib.o 
+g++  -I./includes -O0 -g3 -Wall -std=c++0x -o tcpcli01 ./src/tcpcli01.cpp sigchldwait.o error.o wrapsock.o wrapunix.o wrapstdio.o str_echo.o str_cli.o readline.o writen.o signal.o wraplib.o 
