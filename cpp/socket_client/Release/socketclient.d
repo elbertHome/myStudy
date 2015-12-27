@@ -1,1 +1,0 @@
-socketclient.d: ../socketclient.cpp
