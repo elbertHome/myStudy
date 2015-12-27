@@ -29,7 +29,19 @@ int main(int argc, char ** argv)
 	while (true)
 	{
 		clilen = sizeof(cliaddr);
-		connfd = Accept(listenfd, (SA *) &cliaddr, &clilen);
+
+		if ((connfd = Accept(listenfd, (SA *) &cliaddr, &clilen)) < 0)
+		{
+			if (errno == EINTR)
+			{
+				continue;
+			}
+			else
+			{
+				err_sys("accept error");
+			}
+		}
+
 
 		// Child process
 		if ((childpid = fork()) == 0)
