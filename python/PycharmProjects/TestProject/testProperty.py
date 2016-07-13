@@ -1,6 +1,7 @@
 #!/usr/local/bin/python
 # -*- coding: UTF-8 -*-
 
+
 class HideX(object):
     def __init__(self, val):
         self.__x = val
