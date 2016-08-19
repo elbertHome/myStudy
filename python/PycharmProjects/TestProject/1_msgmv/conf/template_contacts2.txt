@@ -1,0 +1,14 @@
+Message-ID: #{MSGID}
+Subject: auアドレス帳データ添付メール#{SEQ_NUM}
+Date: #{DATE}
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-2022-jp"
+Content-Type: Multipart/Mixed; boundary="--Next_Part--"
+Content-Transfer-Encoding: 7bit
+
+----Next_Part--
+Content-Type: text/vcard; name=“contacts#{NUM}.vcf"
+Content-Disposition: attachment;
+
+#{ATTACH_DATA}
+

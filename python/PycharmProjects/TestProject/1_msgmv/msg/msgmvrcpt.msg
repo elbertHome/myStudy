@@ -1,0 +1,27 @@
+212201  =I Updated PROC_STATUS to %d
+232201	=E Option parameter error.
+232202	=E Config file error. file:%s
+232204	=E PID file already exists. file:%s
+232205	=E PID file error. file:%s
+232206  =E DB connect error. reason: %s
+232207  =E DB query error. query: %s reason: %s
+232208  =E DB retry over.
+232209  =E General error: %s
+212301	=I msgmvrcpt started. mode:%s
+212302	=I msgmvrcpt stopped. mode:%s
+212303	=I Session started.
+212304	=I Request received. request:%s
+212305	=I Request accepted. request:%s,%s,%s
+212306	=I Result responded. response:%s
+212307	=I Session terminated.
+212308	=I Count msgmv queue db. count:%d
+212309	=I Remained queue exists. Start msgmv. login_id:%s
+232301	=E Request timeout.
+232302	=E Over max session.
+232303	=E msgmv restart over.Change to suspended status. login_id:%s
+232304	=E msgmvrcpt stopped abnormally. mode:%s
+232305	=E Failed to receive request.
+232306	=E System call (func:%s) failed. errno:%d
+232307	=E Libevent (func:%s) failed.
+
+212299  =I General Info: %s
