@@ -5,7 +5,7 @@ import time
 import DirOps
 import DBOps
 import MailOps
-
+import NonStopOps
 
 # gloabl vars
 # Case Number
@@ -107,6 +107,7 @@ def main():
         print "=====main() start====="
         envDic = loadConfigs()
         DirOps.iniDir(envDic)
+        NonStopOps.updateNsimStatus(envDic["LOGIN_ID"])
         DBOps.prepareDBdata(envDic)
         MailOps.prepareMailData(envDic)
         MailOps.prepareContact(envDic)

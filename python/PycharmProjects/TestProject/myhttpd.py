@@ -11,7 +11,7 @@ class MyHandler(SimpleHTTPRequestHandler):
         try:
             f = open(self.path[1:], "r")
             self.send_response(200)
-            self.send_header("Content-type", "text/plain")
+            self.send_header("Content-type", "text/html")
             self.end_headers()
             self.wfile.write(f.read())
             f.close()
